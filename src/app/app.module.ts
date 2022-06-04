@@ -10,7 +10,7 @@ import { SearchItemComponent } from './components/items/search-item/search-item.
 
 const appRoutes:Routes = [
   { path:'', component:ListItemsComponent},
-  { path:'searchItem', component:SearchItemComponent}
+  { path:'searchItem/:itemId', component:SearchItemComponent}
 ];
 
 @NgModule({
