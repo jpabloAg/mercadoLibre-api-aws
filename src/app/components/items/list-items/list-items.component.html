@@ -1,0 +1,26 @@
+<p>
+    Buscar productos: <br/>
+    <input type="text" [formControl]="itemCtrl">
+</p>
+<button type="button" (click)="getItems($event)">Buscar</button>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Img</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <th scope="row">1</th>
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.price}}</td>
+        <td><img [src]="item.thumbnail"></td>
+      </tr>
+    </tbody>
+</table>
